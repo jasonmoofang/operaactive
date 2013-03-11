@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="extensions:youtubeplugin" version="1.0.3">
+  <name>Youtubeplugin</name>
+  <author href="http://github.com/styx" email="styx.mp@gmail.com">Mikhail S. Pobolovets</author>
+  <icon src="icons/add-to-gbm-64.png"/>
+  <update-description href="https://extension-updates.opera.com/api/w3c-wd1/update/7a86f88129f045ce8b0e5cfd43b9a6ab/"/>
+  <description xml:lang="en">A simple bookmarklet for Google bookmarks service.</description>
+  <access origin="*"/>
+</widget>

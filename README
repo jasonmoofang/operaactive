@@ -1,0 +1,19 @@
+Whole package of workarounds so I can comfortably use OperaMobile on my Plasma
+Active tablet. The stuff here will enable one to
+
+- Create a nepomuk bookmark with the current page
+- Open the current page in firefox
+- Open the current page in smplayer (for youtube)
+
+via UI buttons on the opera-mobile chrome.
+
+The problem with Opera extensions is they don't actually let you run
+external programs/commands - you have only just about as much power/
+permission as a web-app. The workaround that limitation here is as
+thus: we make Opera extensions that send out specific requests via
+Ajax calls to localhost, and we run a simple local python server that
+recognizes the requests and runs the appropriate program.
+
+'webserver.py' is the local python webserver that should be started
+first. 'nepomukbookmark', 'oifirefox' and 'youtube' are each individual
+Opera extensions that add their respective buttons to the chrome.
