@@ -36,7 +36,7 @@ class MyHandler(BaseHTTPRequestHandler):
 		params = urlparse.parse_qs(o.query)
 		if params['url']:
 		    print urllib.unquote(params['url'][0])
-		    os.system("/usr/bin/firefox \"" + urllib.unquote(params['url'][0]) + "\"")
+		    os.system("/home/mer/noindex/fennec/run-mozilla.sh /home/mer/noindex/fennec/fennec \"" + urllib.unquote(params['url'][0]) + "\"")
 		    self.send_response(200)
 		    self.send_header('Content-type',	'text/html')
 		    self.end_headers()
